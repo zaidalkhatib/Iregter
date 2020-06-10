@@ -1,0 +1,32 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+<a href="/logout"><button style="margin:20px" type="submit" class="btn btn-primary">
+        Log out
+    </button></a>
+
+
+<div class="container">
+    <% foundUsers.forEach(function(user){ %>
+
+
+        <div class="media">
+
+            <div class="media-body">
+                <div class="well">
+                    <p style=" font-size:20px">
+
+                        <%=user.regret%>
+
+
+                            <br>
+                    </p>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+
+</div>
